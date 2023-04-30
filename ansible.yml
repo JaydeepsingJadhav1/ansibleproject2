@@ -1,6 +1,6 @@
 ---
 - name: ansible project
-  host: prod
+  hosts: prod
   remote_user: ubuntu
   become: yes 
   task:
