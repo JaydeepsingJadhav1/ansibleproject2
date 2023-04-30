@@ -3,7 +3,7 @@
   hosts: prod
   remote_user: ubuntu
   become: yes 
-  task:
+  tasks:
    - name: war file
      copy:
        src: target/wwp-1.0.0.war
