@@ -4,8 +4,8 @@
    remote_user: ubuntu
    become: yes 
    task:
-   -  name: war file
-      copy:
+   - name: war file
+     copy:
         src: target/wwp-1.0.0.war
         dest: /var/lib/tomcat9/webapps/target/wwp-1.0.0.war
         owner: tomcat9
