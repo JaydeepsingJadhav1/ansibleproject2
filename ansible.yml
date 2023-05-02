@@ -2,7 +2,9 @@
 - name: ansible project
   hosts: prod
   remote_user: ubuntu
-  become: yes 
+  become: yes
+  connection: ssh
+  gather_facts: yes
   tasks:
    - name: war file
      copy:
