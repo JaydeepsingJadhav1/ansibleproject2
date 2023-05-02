@@ -3,6 +3,7 @@
   hosts: prod
   remote_user: ubuntu
   become: yes
+  connection: ssh
   gather_facts: yes
   tasks:
    - name: war file
